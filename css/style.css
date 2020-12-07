@@ -124,6 +124,24 @@ img {
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  position: relative;
+}
+
+.site-nav .link.current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
 /* Auth-nav */
 .auth-nav {
   display: flex;
@@ -266,7 +284,7 @@ img {
   text-transform: uppercase;
 }
 
-.work-overlay {
+.work-info {
   position: absolute;
   display: flex;
   justify-content: center;
